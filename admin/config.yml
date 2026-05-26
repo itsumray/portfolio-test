@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: itsumray/portofolio
+  branch: main
+
+media_folder: "assets"
+public_folder: "/assets"
+
+collections:
+  - name: "instagram_feed"
+    label: "Instagram Marquee Feed"
+    files:
+      - file: "feed.json"
+        label: "Marquee Image Links Stream"
+        name: "feed_data"
+        fields:
+          - { label: "Marquee Image Stream (Upload from device)", name: "images", widget: "list", field: { label: "Image Asset File", name: "url", widget: "image" } }
