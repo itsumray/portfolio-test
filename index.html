@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-96VF0KER7Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-96VF0KER7Y');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@its_um_ray</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="intro-active">
+
+    <div class="bg-marquee-container" id="bgMarquee">
+        <div class="marquee-track" id="marqueeTrack"></div>
+    </div>
+
+    <div class="lang-overlay hidden" id="langOverlay"></div>
+
+    <nav class="top-nav" id="topNav">
+        <div class="lang-switcher">
+            <button onclick="selectLanguage('en')" id="btn-en" class="lang-btn">
+                <span class="full-lang">English</span>
+                <span class="short-lang">EN</span>
+            </button>
+            <button onclick="selectLanguage('ja')" id="btn-ja" class="lang-btn">
+                <span class="full-lang">日本語</span>
+                <span class="short-lang">JA</span>
+            </button>
+            <button onclick="selectLanguage('zh')" id="btn-zh" class="lang-btn">
+                <span class="full-lang">中文</span>
+                <span class="short-lang">ZH</span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content" id="mainContent">
+        <header class="profile-header">
+            <img src="assets/pfp.jpg" alt="PFP" class="header-pfp">
+            <div class="header-titles">
+                <h1>Hi I'm Ray,</h1>
+                <p>aka @its_um_ray</p>
+            </div>
+        </header>
+
+        <section class="about-section">
+            <h2 id="aboutTitle"><span class="guide-arrow" id="guideArrow">→</span> About Me</h2>
+            <p id="aboutText"></p>
+        </section>
+
+        <section class="links-grid" id="linksGrid"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
